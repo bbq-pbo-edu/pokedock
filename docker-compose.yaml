@@ -1,11 +1,11 @@
 services:
   apache:
-    build: ./apache
+    build: docker/apache
     container_name: apache
     ports:
       - "80:80"
     volumes:
-      - ../public:/var/www/html
+      - ./:/var/www/pokemon
   mariadb:
     image: mariadb:latest
     restart: always
@@ -24,12 +24,12 @@ services:
     restart: always
     ports:
       - "8080:8080"
-  bind9:
-    build: ./bind
-    container_name: bind9
-    ports:
-      - "3053:53/udp"
-      - "3053:53/tcp"
+#  bind9:
+#    build: ./bind
+#    container_name: bind9
+#    ports:
+#      - "3053:53/udp"
+#      - "3053:53/tcp"
 
 volumes:
   mariadb_data:
