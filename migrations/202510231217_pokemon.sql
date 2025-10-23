@@ -9,5 +9,6 @@ CREATE TABLE pokemon
     name        VARCHAR(32)                                                                                                                                NOT NULL NOT NULL,
     caught      BOOL                                                                                                                                                         DEFAULT false    NOT NULL,
     type_1      VARCHAR(255) NOT NULL,
-    type_2      VARCHAR(255) DEFAULT NULL
+    type_2      VARCHAR(255) DEFAULT NULL,
+    description TEXT DEFAULT NULL
 );
