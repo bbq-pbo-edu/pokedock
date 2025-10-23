@@ -6,15 +6,17 @@ services:
       - "80:80"
     volumes:
       - ./:/var/www/pokemon
+    env_file:
+      - ./.env
   mariadb:
     image: mariadb:latest
     restart: always
     container_name: mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: p@ssw0rt
-      MYSQL_DATABASE: pokedex
-      MYSQL_USER: phpstorm
-      MYSQL_PASSWORD: p@ssw0rt
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
     ports:
       - "3306:3306"
     volumes:
