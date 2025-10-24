@@ -1,0 +1,429 @@
+:root {
+
+    /* === PRIMITIVES === */
+
+    --color-fire-100: hsl(9, 100%, 17%);
+    --color-fire-200: #8a1500;
+    --color-fire-300: hsl(9, 100%, 37%);
+    --color-fire-400: hsl(9, 100%, 47%);
+    --color-fire-500: hsl(9, 100%, 57%); /* base */
+    --color-fire-600: hsl(9, 100%, 67%);
+    --color-fire-700: hsl(9, 100%, 77%);
+    --color-fire-800: hsl(9, 100%, 87%);
+    --color-fire-900: hsl(9, 100%, 97%);
+
+    --color-grass-100: hsl(101, 54%, 12%);
+    --color-grass-200: #2d561a;
+    --color-grass-300: hsl(101, 54%, 32%);
+    --color-grass-400: hsl(101, 54%, 42%);
+    --color-grass-500: hsl(101, 54%, 52%);
+    --color-grass-600: hsl(101, 54%, 62%); /* base */
+    --color-grass-700: hsl(101, 54%, 72%);
+    --color-grass-800: hsl(101, 54%, 82%);
+    --color-grass-900: hsl(101, 54%, 92%);
+
+    --color-poison-100: hsl(315, 34%, 17%);
+    --color-poison-200: #5c2d51;
+    --color-poison-300: hsl(315, 34%, 37%);
+    --color-poison-400: hsl(315, 34%, 47%);
+    --color-poison-500: hsl(315, 34%, 57%); /* base */
+    --color-poison-600: hsl(315, 34%, 67%);
+    --color-poison-700: hsl(315, 34%, 77%);
+    --color-poison-800: hsl(315, 34%, 87%);
+    --color-poison-900: hsl(315, 34%, 97%);
+
+    --color-flying-100: hsl(232, 91%, 19%);
+    --color-flying-200: #07198d;
+    --color-flying-300: hsl(232, 91%, 39%);
+    --color-flying-400: hsl(232, 91%, 49%);
+    --color-flying-500: hsl(232, 91%, 59%);
+    --color-flying-600: hsl(232, 91%, 69%);
+    --color-flying-700: hsl(232, 91%, 79%); /* base */
+    --color-flying-800: hsl(232, 91%, 89%);
+    --color-flying-900: hsl(232, 91%, 99%);
+
+    --color-water-150: hsl(209, 94%, 15%);
+    --color-water-250: #04427c;
+    --color-water-350: hsl(209, 94%, 35%);
+    --color-water-450: hsl(209, 94%, 45%);
+    --color-water-550: hsl(209, 94%, 55%);
+    --color-water-650: hsl(209, 94%, 65%); /* base */
+    --color-water-750: hsl(209, 94%, 75%);
+    --color-water-850: hsl(209, 94%, 85%);
+    --color-water-950: hsl(209, 94%, 95%);
+
+    --color-bug-100: hsl(66, 53%, 11%);
+    --color-bug-200: hsl(66, 53%, 21%);
+    --color-bug-300: hsl(66, 53%, 31%);
+    --color-bug-400: hsl(66, 53%, 41%);
+    --color-bug-500: hsl(66, 53%, 51%); /* base */
+    --color-bug-600: hsl(66, 53%, 61%);
+    --color-bug-700: hsl(66, 53%, 71%);
+    --color-bug-800: hsl(66, 53%, 81%);
+    --color-bug-900: hsl(66, 53%, 91%);
+
+    --color-normal-100: hsl(57, 12%, 18%);
+    --color-normal-200: #504f3f;
+    --color-normal-300: hsl(57, 12%, 38%);
+    --color-normal-400: hsl(57, 12%, 48%);
+    --color-normal-500: hsl(57, 12%, 58%);
+    --color-normal-600: hsl(57, 12%, 68%); /* base */
+    --color-normal-700: hsl(57, 12%, 78%);
+    --color-normal-800: hsl(57, 12%, 88%);
+    --color-normal-900: hsl(57, 12%, 98%);
+
+    --color-electric-150: hsl(45, 100%, 15%);
+    --color-electric-250: #806000;
+    --color-electric-350: hsl(45, 100%, 35%);
+    --color-electric-450: hsl(45, 100%, 45%);
+    --color-electric-550: hsl(45, 100%, 55%);
+    --color-electric-650: hsl(45, 100%, 65%); /* base */
+    --color-electric-750: hsl(45, 100%, 75%);
+    --color-electric-850: hsl(45, 100%, 85%);
+    --color-electric-950: hsl(45, 100%, 95%);
+
+    --color-ground-150: hsl(45, 67%, 15%);
+    --color-ground-250: #6a5515;
+    --color-ground-350: hsl(45, 67%, 35%);
+    --color-ground-450: hsl(45, 67%, 45%);
+    --color-ground-550: hsl(45, 67%, 55%);
+    --color-ground-650: hsl(45, 67%, 65%); /* base */
+    --color-ground-750: hsl(45, 67%, 75%);
+    --color-ground-850: hsl(45, 67%, 85%);
+    --color-ground-950: hsl(45, 67%, 95%);
+
+    --color-fairy-150: hsl(300, 71%, 17%);
+    --color-fairy-250: #761476;
+    --color-fairy-350: hsl(300, 71%, 37%);
+    --color-fairy-450: hsl(300, 71%, 47%);
+    --color-fairy-550: hsl(300, 71%, 57%);
+    --color-fairy-650: hsl(300, 71%, 67%);
+    --color-fairy-750: hsl(300, 71%, 77%); /* base */
+    --color-fairy-850: hsl(300, 71%, 87%);
+    --color-fairy-950: hsl(300, 71%, 97%);
+
+    --color-fighting-150: hsl(10, 48%, 16%);
+    --color-fighting-250: #622d22;
+    --color-fighting-350: hsl(10, 48%, 36%);
+    --color-fighting-450: hsl(10, 48%, 46%);
+    --color-fighting-550: hsl(10, 48%, 56%); /* base */
+    --color-fighting-650: hsl(10, 48%, 66%);
+    --color-fighting-750: hsl(10, 48%, 76%);
+    --color-fighting-850: hsl(10, 48%, 86%);
+    --color-fighting-950: hsl(10, 48%, 96%);
+
+    --color-psychic-100: hsl(337, 100%, 11%);
+    --color-psychic-200: #6b0029;
+    --color-psychic-300: hsl(337, 100%, 31%);
+    --color-psychic-400: hsl(337, 100%, 41%);
+    --color-psychic-500: hsl(337, 100%, 51%);
+    --color-psychic-600: hsl(337, 100%, 61%);
+    --color-psychic-700: hsl(337, 100%, 71%); /* base */
+    --color-psychic-800: hsl(337, 100%, 81%);
+    --color-psychic-900: hsl(337, 100%, 91%);
+
+    --color-rock-100: hsl(48, 40%, 12%);
+    --color-rock-200: #4f4622;
+    --color-rock-300: hsl(48, 40%, 32%);
+    --color-rock-400: hsl(48, 40%, 42%);
+    --color-rock-500: hsl(48, 40%, 52%);
+    --color-rock-600: hsl(48, 40%, 62%); /* base */
+    --color-rock-700: hsl(48, 40%, 72%);
+    --color-rock-800: hsl(48, 40%, 82%);
+    --color-rock-900: hsl(48, 40%, 92%);
+
+    --color-steel-150: hsl(245, 8%, 14%);
+    --color-steel-250: #393842;
+    --color-steel-350: hsl(245, 8%, 34%);
+    --color-steel-450: hsl(245, 8%, 44%);
+    --color-steel-550: hsl(245, 8%, 54%);
+    --color-steel-650: hsl(245, 8%, 64%);
+    --color-steel-750: hsl(245, 8%, 74%); /* base */
+    --color-steel-850: hsl(245, 8%, 84%);
+    --color-steel-950: hsl(245, 8%, 94%);
+
+    --color-ice-150: hsl(199, 93%, 14%);
+    --color-ice-250: #045276;
+    --color-ice-350: hsl(199, 93%, 34%);
+    --color-ice-450: hsl(199, 93%, 44%);
+    --color-ice-550: hsl(199, 93%, 54%);
+    --color-ice-650: hsl(199, 93%, 64%);
+    --color-ice-750: hsl(199, 93%, 74%); /* base */
+    --color-ice-850: hsl(199, 93%, 84%);
+    --color-ice-950: hsl(199, 93%, 94%);
+
+    --color-ghost-100: hsl(241, 36%, 12%);
+    --color-ghost-200: #25244c;
+    --color-ghost-300: hsl(241, 36%, 32%);
+    --color-ghost-400: hsl(241, 36%, 42%);
+    --color-ghost-500: hsl(241, 36%, 52%);
+    --color-ghost-600: hsl(241, 36%, 62%); /* base */
+    --color-ghost-700: hsl(241, 36%, 72%);
+    --color-ghost-800: hsl(241, 36%, 82%);
+    --color-ghost-900: hsl(241, 36%, 92%);
+
+    --color-dragon-100: hsl(248, 75%, 11%);
+    --color-dragon-200: #180d5e;
+    --color-dragon-300: hsl(248, 75%, 31%);
+    --color-dragon-400: hsl(248, 75%, 41%);
+    --color-dragon-500: hsl(248, 75%, 51%);
+    --color-dragon-600: hsl(248, 75%, 61%);
+    --color-dragon-700: hsl(248, 75%, 71%); /* base */
+    --color-dragon-800: hsl(248, 75%, 81%);
+    --color-dragon-900: hsl(248, 75%, 91%);
+
+    /* === SEMANTICS === */
+
+    --color-bg-type-fire: var(--color-fire-500);
+    --color-bg-type-grass: var(--color-grass-600);
+    --color-bg-type-water: var(--color-water-650);
+    --color-bg-type-poison: var(--color-poison-500);
+    --color-bg-type-flying: var(--color-flying-700);
+    --color-bg-type-bug: var(--color-bug-500);
+    --color-bg-type-normal: var(--color-normal-600);
+    --color-bg-type-electric: var(--color-electric-650);
+    --color-bg-type-ground: var(--color-ground-650);
+    --color-bg-type-fairy: var(--color-fairy-750);
+    --color-bg-type-fighting: var(--color-fighting-550);
+    --color-bg-type-psychic: var(--color-psychic-700);
+    --color-bg-type-rock: var(--color-rock-600);
+    --color-bg-type-steel: var(--color-steel-750);
+    --color-bg-type-ice: var(--color-ice-750);
+    --color-bg-type-ghost: var(--color-ghost-600);
+    --color-bg-type-dragon: var(--color-dragon-700);
+}
+
+body {
+    display: block;
+    background-color: var(--color-steel-950);
+    font-family: sans-serif;
+}
+
+.banner__content {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-family: sans-serif;
+    width: 88px;
+    background-color: lightgray;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-inline: .5rem;
+    padding-block: .2rem;
+}
+
+.pokeball {
+    width: 24px;
+    height: 24px;
+}
+
+.pokeball.pokeball--active {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.pokeball.pokeball--inactive {
+    border: 1px solid #22232544;
+    border-radius: 50%;
+}
+
+.banner__icon svg {
+    width: 20px;
+    height: 20px;
+    padding: .1rem;
+}
+
+.banner__text {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Fire Type */
+.banner__content:has(.type--feuer) {
+    background-color: var(--color-bg-type-fire);
+    color: var(--color-fire-200);
+}
+
+.banner__icon.type--feuer svg {
+    fill: var(--color-fire-200);
+    stroke: black;
+}
+
+/* Grass Type */
+.banner__content:has(.type--pflanze) {
+    background-color: var(--color-bg-type-grass);
+    color: var(--color-grass-200);
+}
+
+.banner__icon.type--pflanze svg {
+    fill: var(--color-grass-200);
+    stroke: black;
+}
+
+/* Water Type */
+.banner__content:has(.type--wasser) {
+    background-color: var(--color-bg-type-water);
+    color: var(--color-water-250);
+}
+
+.banner__icon.type--wasser svg {
+    fill: var(--color-water-250);
+    stroke: black;
+}
+
+/* Poison Type */
+.banner__content:has(.type--gift) {
+    background-color: var(--color-bg-type-poison);
+    color: var(--color-poison-200);
+}
+
+.banner__icon.type--gift svg {
+    fill: var(--color-poison-200);
+    stroke: black;
+}
+
+/* Flying Type */
+.banner__content:has(.type--flug) {
+    background-color: var(--color-bg-type-flying);
+    color: var(--color-flying-200);
+}
+
+.banner__icon.type--flug svg {
+    fill: var(--color-flying-200);
+    stroke: black;
+}
+
+/* Bug Type */
+.banner__content:has(.type--kaefer) {
+    background-color: var(--color-bg-type-bug);
+    color: var(--color-bug-200);
+}
+
+.banner__icon.type--kaefer svg {
+    fill: var(--color-bug-200);
+    stroke: black;
+}
+
+/* Normal Type */
+.banner__content:has(.type--normal) {
+    background-color: var(--color-bg-type-normal);
+    color: var(--color-normal-200);
+}
+
+.banner__icon.type--normal svg {
+    fill: var(--color-normal-200);
+    stroke: black;
+}
+
+/* Electric Type */
+.banner__content:has(.type--elektro) {
+    background-color: var(--color-bg-type-electric);
+    color: var(--color-electric-250);
+}
+
+.banner__icon.type--elektro svg {
+    fill: var(--color-electric-250);
+    stroke: black;
+}
+
+/* Ground Type */
+.banner__content:has(.type--boden) {
+    background-color: var(--color-bg-type-ground);
+    color: var(--color-ground-250);
+}
+
+.banner__icon.type--boden svg {
+    fill: var(--color-ground-250);
+    stroke: black;
+}
+
+/* Fairy Type */
+.banner__content:has(.type--fee) {
+    background-color: var(--color-bg-type-fairy);
+    color: var(--color-fairy-250);
+}
+
+.banner__icon.type--fee svg {
+    fill: var(--color-fairy-250);
+    stroke: black;
+}
+
+/* Fighting Type */
+.banner__content:has(.type--kampf) {
+    background-color: var(--color-bg-type-fighting);
+    color: var(--color-fighting-250);
+}
+
+.banner__icon.type--kampf svg {
+    fill: var(--color-fighting-250);
+    stroke: black;
+}
+
+/* Psychic Type */
+.banner__content:has(.type--psycho) {
+    background-color: var(--color-bg-type-psychic);
+    color: var(--color-psychic-200);
+}
+
+.banner__icon.type--psycho svg {
+    fill: var(--color-psychic-200);
+    stroke: black;
+}
+
+/* Rock Type */
+.banner__content:has(.type--gestein) {
+    background-color: var(--color-bg-type-rock);
+    color: var(--color-rock-200);
+}
+
+.banner__icon.type--gestein svg {
+    fill: var(--color-rock-200);
+    stroke: black;
+}
+
+/* Steel Type */
+.banner__content:has(.type--stahl) {
+    background-color: var(--color-bg-type-steel);
+    color: var(--color-steel-250);
+}
+
+.banner__icon.type--stahl svg {
+    fill: var(--color-steel-250);
+    stroke: black;
+}
+
+/* Ice Type */
+.banner__content:has(.type--eis) {
+    background-color: var(--color-bg-type-ice);
+    color: var(--color-ice-250);
+}
+
+.banner__icon.type--eis svg {
+    fill: var(--color-ice-250);
+    stroke: black;
+}
+
+/* Ghost Type */
+.banner__content:has(.type--geist) {
+    background-color: var(--color-bg-type-ghost);
+    color: var(--color-ghost-200);
+}
+
+.banner__icon.type--geist svg {
+    fill: var(--color-ghost-200);
+    stroke: black;
+}
+
+/* Dragon Type */
+.banner__content:has(.type--drache) {
+    background-color: var(--color-bg-type-dragon);
+    color: var(--color-dragon-200);
+}
+
+.banner__icon.type--drache svg {
+    fill: var(--color-dragon-200);
+    width: 20px;
+    height: 20px;
+    stroke: black;
+}
